@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/main.css" rel="stylesheet" />
+    <title>@ViewBag.Title</title>
+    <!--Link to Icon, credit goes to flaticon.com-->
+    <link rel="icon" href="~/img/quality.png">
+</head>
+
+<body>
+    <header>
+        <h1>@ViewBag.Header</h1>
+        <menu>
+            <ul>
+                <li><a asp-controller="First" asp-action="Index">Home</a></li>
+                <li><a asp-contoller="First" asp-action="GradeCalc">Grade Calculator</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    @RenderBody()
+
+    <footer>This is the footer</footer>
+    <script src="~/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/gradeCalc.js"></script>
+</body>
+</html>
